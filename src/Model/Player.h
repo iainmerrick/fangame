@@ -5,7 +5,8 @@
 //
 @interface Player : NSObject
 
-@property (readonly, nonnull) NSString* name;
+@property (readonly, nonnull) NSString* firstName;
+@property (readonly, nonnull) NSString* lastName;
 @property (readonly) CGFloat fppg;
 @property (readonly) CGSize imageSize;
 

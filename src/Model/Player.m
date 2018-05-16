@@ -8,8 +8,15 @@
 
 	self = [super init];
 	if (self) {
-		// Do something useful with this...
-		NSLog(@"Player: %@", json);
+		// TODO: check that these fields have the correct types.
+		// (Right now we'll probably crash if they're not.)
+		_firstName = json[@"first_name"];
+		_lastName = json[@"last_name"];
+		_fppg = [json[@"fppg"] doubleValue];
+
+		NSDictionary* image = json[@"images"][@"default"];
+		_imageSize = CGSizeMake(
+			[image[@"width"] doubleValue], [image[@"height"] doubleValue]);
 	}
 	return self;
 }

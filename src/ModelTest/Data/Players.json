@@ -1,6 +1,7 @@
 {
 	"players": [{
 		"first_name": "A",
+		"last_name": "1",
 		"fppg": 1.0,
 		"images": {
 			"default": {
@@ -11,6 +12,7 @@
 		}
 	}, {
 		"first_name": "B",
+		"last_name": "2",
 		"fppg": 1.5,
 		"images": {
 			"default": {
@@ -21,6 +23,7 @@
 		}
 	}, {
 		"first_name": "C",
+		"last_name": "3",
 		"fppg": 2.0,
 		"images": {
 			"default": {
