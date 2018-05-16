@@ -1,0 +1,33 @@
+{
+	"players": [{
+		"first_name": "A",
+		"fppg": 1.0,
+		"images": {
+			"default": {
+				"height": 256,
+				"url": "A.png",
+				"width": 256
+			}
+		}
+	}, {
+		"first_name": "B",
+		"fppg": 1.5,
+		"images": {
+			"default": {
+				"height": 256,
+				"url": "B.png",
+				"width": 256
+			}
+		}
+	}, {
+		"first_name": "C",
+		"fppg": 2.0,
+		"images": {
+			"default": {
+				"height": 256,
+				"url": "C.png",
+				"width": 256
+			}
+		}
+	}]
+}
