@@ -13,4 +13,6 @@
 // - iOS and macOS have different image classes, doh
 // - Image will need to be loaded asynchronously
 
++ (instancetype)loadJsonObject:(NSDictionary*)json;
+
 @end

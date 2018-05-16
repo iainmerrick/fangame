@@ -9,6 +9,7 @@
 
 @property (nonatomic, readonly) NSArray<Player*>* players;
 
-+ (Players*)loadJson:(NSString*)json;
++ (instancetype)loadData:(NSData*)data;
++ (instancetype)loadJsonObject:(NSDictionary*)json;
 
 @end

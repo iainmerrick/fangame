@@ -8,21 +8,24 @@
 
 @implementation PlayersTest
 
-static NSString* _json;
+static NSData* _json;
 
 + (void)setUp
 {
 	NSBundle* bundle = [NSBundle bundleForClass:self.class];
 	NSString* path = [bundle pathForResource:@"Players" ofType:@"json"];
-	_json = [NSString stringWithContentsOfFile:path
-									  encoding:NSUTF8StringEncoding
-										 error:NULL];
+	_json = [NSData dataWithContentsOfFile:path];
 }
 
 - (void)testLoadJson
 {
-	Players* players = [Players loadJson:_json];
+	Players* players = [Players loadData:_json];
 	XCTAssertNotNil(players);
+
+	// Note: hmm, I'm not too happy with "players.players"!
+	// But it does fit with the provided JSON structure.
+	NSArray<Player*>* arr = players.players;
+	XCTAssertEqual(arr.count, 3);
 }
 
 @end
