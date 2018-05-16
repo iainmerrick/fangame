@@ -13,7 +13,7 @@ static NSData* _json;
 + (void)setUp
 {
 	NSBundle* bundle = [NSBundle bundleForClass:self.class];
-	NSString* path = [bundle pathForResource:@"Players" ofType:@"json"];
+	NSString* path = [bundle pathForResource:@"Data/Players" ofType:@"json"];
 	_json = [NSData dataWithContentsOfFile:path];
 }
 

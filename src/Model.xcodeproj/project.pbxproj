@@ -13,10 +13,11 @@
 		AEFF84C120AC7FF3002D7EC3 /* Players.m in Sources */ = {isa = PBXBuildFile; fileRef = AEFF84BF20AC7FF3002D7EC3 /* Players.m */; };
 		AEFF84C420AC84BF002D7EC3 /* Player.h in Headers */ = {isa = PBXBuildFile; fileRef = AEFF84C220AC84BF002D7EC3 /* Player.h */; };
 		AEFF84C520AC84BF002D7EC3 /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = AEFF84C320AC84BF002D7EC3 /* Player.m */; };
-		AEFF84CC20AC88A0002D7EC3 /* A.png in Resources */ = {isa = PBXBuildFile; fileRef = AEFF84C720AC88A0002D7EC3 /* A.png */; };
-		AEFF84CD20AC88A0002D7EC3 /* B.png in Resources */ = {isa = PBXBuildFile; fileRef = AEFF84C820AC88A0002D7EC3 /* B.png */; };
-		AEFF84CE20AC88A0002D7EC3 /* C.png in Resources */ = {isa = PBXBuildFile; fileRef = AEFF84C920AC88A0002D7EC3 /* C.png */; };
-		AEFF84D020AC88A0002D7EC3 /* Players.json in Resources */ = {isa = PBXBuildFile; fileRef = AEFF84CB20AC88A0002D7EC3 /* Players.json */; };
+		AEFF84D220ACE51A002D7EC3 /* Loader.h in Headers */ = {isa = PBXBuildFile; fileRef = AEFF84D120ACE51A002D7EC3 /* Loader.h */; };
+		AEFF84D520ACE6DA002D7EC3 /* FileLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = AEFF84D320ACE6DA002D7EC3 /* FileLoader.h */; };
+		AEFF84D620ACE6DA002D7EC3 /* FileLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = AEFF84D420ACE6DA002D7EC3 /* FileLoader.m */; };
+		AEFF84D820ACEB46002D7EC3 /* FileLoaderTest.m in Sources */ = {isa = PBXBuildFile; fileRef = AEFF84D720ACEB46002D7EC3 /* FileLoaderTest.m */; };
+		AEFF84DB20ACEE80002D7EC3 /* Data in Resources */ = {isa = PBXBuildFile; fileRef = AEFF84DA20ACEE80002D7EC3 /* Data */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,10 +39,11 @@
 		AEFF84BF20AC7FF3002D7EC3 /* Players.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Players.m; sourceTree = "<group>"; };
 		AEFF84C220AC84BF002D7EC3 /* Player.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
 		AEFF84C320AC84BF002D7EC3 /* Player.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
-		AEFF84C720AC88A0002D7EC3 /* A.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = A.png; sourceTree = "<group>"; };
-		AEFF84C820AC88A0002D7EC3 /* B.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = B.png; sourceTree = "<group>"; };
-		AEFF84C920AC88A0002D7EC3 /* C.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = C.png; sourceTree = "<group>"; };
-		AEFF84CB20AC88A0002D7EC3 /* Players.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Players.json; sourceTree = "<group>"; };
+		AEFF84D120ACE51A002D7EC3 /* Loader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Loader.h; sourceTree = "<group>"; };
+		AEFF84D320ACE6DA002D7EC3 /* FileLoader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FileLoader.h; sourceTree = "<group>"; };
+		AEFF84D420ACE6DA002D7EC3 /* FileLoader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FileLoader.m; sourceTree = "<group>"; };
+		AEFF84D720ACEB46002D7EC3 /* FileLoaderTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FileLoaderTest.m; sourceTree = "<group>"; };
+		AEFF84DA20ACEE80002D7EC3 /* Data */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Data; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,9 @@
 				AEFF84BF20AC7FF3002D7EC3 /* Players.m */,
 				AEFF84C220AC84BF002D7EC3 /* Player.h */,
 				AEFF84C320AC84BF002D7EC3 /* Player.m */,
+				AEFF84D120ACE51A002D7EC3 /* Loader.h */,
+				AEFF84D320ACE6DA002D7EC3 /* FileLoader.h */,
+				AEFF84D420ACE6DA002D7EC3 /* FileLoader.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -95,22 +100,12 @@
 		AEFF84B420AC7E42002D7EC3 /* ModelTest */ = {
 			isa = PBXGroup;
 			children = (
-				AEFF84C620AC88A0002D7EC3 /* Data */,
+				AEFF84DA20ACEE80002D7EC3 /* Data */,
+				AEFF84D720ACEB46002D7EC3 /* FileLoaderTest.m */,
 				AEFF84B520AC7E42002D7EC3 /* PlayersTest.m */,
 				AEFF84B720AC7E42002D7EC3 /* Info.plist */,
 			);
 			path = ModelTest;
-			sourceTree = "<group>";
-		};
-		AEFF84C620AC88A0002D7EC3 /* Data */ = {
-			isa = PBXGroup;
-			children = (
-				AEFF84C720AC88A0002D7EC3 /* A.png */,
-				AEFF84C820AC88A0002D7EC3 /* B.png */,
-				AEFF84C920AC88A0002D7EC3 /* C.png */,
-				AEFF84CB20AC88A0002D7EC3 /* Players.json */,
-			);
-			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -120,6 +115,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AEFF84D220ACE51A002D7EC3 /* Loader.h in Headers */,
+				AEFF84D520ACE6DA002D7EC3 /* FileLoader.h in Headers */,
 				AEFF84C420AC84BF002D7EC3 /* Player.h in Headers */,
 				AEFF84C020AC7FF3002D7EC3 /* Players.h in Headers */,
 			);
@@ -203,10 +200,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AEFF84CE20AC88A0002D7EC3 /* C.png in Resources */,
-				AEFF84CD20AC88A0002D7EC3 /* B.png in Resources */,
-				AEFF84CC20AC88A0002D7EC3 /* A.png in Resources */,
-				AEFF84D020AC88A0002D7EC3 /* Players.json in Resources */,
+				AEFF84DB20ACEE80002D7EC3 /* Data in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,6 +212,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AEFF84C120AC7FF3002D7EC3 /* Players.m in Sources */,
+				AEFF84D620ACE6DA002D7EC3 /* FileLoader.m in Sources */,
 				AEFF84C520AC84BF002D7EC3 /* Player.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -226,6 +221,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AEFF84D820ACEB46002D7EC3 /* FileLoaderTest.m in Sources */,
 				AEFF84B620AC7E42002D7EC3 /* PlayersTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
