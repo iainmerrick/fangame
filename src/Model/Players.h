@@ -5,8 +5,6 @@
 
 @class Players;
 
-typedef void (^PlayersCompletionBlock)(Players* players, NSError* error);
-
 //
 // A collection of players and related info.
 //
@@ -15,11 +13,19 @@ typedef void (^PlayersCompletionBlock)(Players* players, NSError* error);
 @property (nonatomic, readonly) NSArray<Player*>* players;
 
 //
-// Create a Players object asynchronously from the specified URL.
+// Construct from parsed JSON object.
+// - json: dictionary containing "players" array. Other fields are ignored.
+// - url: base URL for any relative URLs found in the JSON.
+// - error: optional output parameter in case of error.
 //
-+ (void)withUrl:(NSString*)url loader:(id<Loader>)loader completion:(PlayersCompletionBlock)block;
+- (instancetype)initWithJson:(NSDictionary*)json url:(NSURL*)url error:(NSError**)error;
 
-- (instancetype)initWithData:(NSData*)data loader:(id<Loader>)loader error:(NSError**)error;
-- (instancetype)initWithJson:(NSDictionary*)json loader:(id<Loader>)loader error:(NSError**)error;
+//
+// Construct from raw JSON data.
+// - data: byte array of player data in JSON format.
+// - url: base URL for any relative URLs found in the JSON.
+// - error: optional output parameter in case of error.
+//
+- (instancetype)initWithData:(NSData*)data url:(NSURL*)url error:(NSError**)error;
 
 @end

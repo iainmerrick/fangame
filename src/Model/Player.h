@@ -9,11 +9,13 @@
 @property (readonly, nonnull) NSString* lastName;
 @property (readonly) CGFloat fppg;
 @property (readonly) CGSize imageSize;
+@property (readonly) NSURL* imageUrl;
 
-// TODO: 'image' property will have a couple of wrinkles:
-// - iOS and macOS have different image classes, doh
-// - Image will need to be loaded asynchronously
-
-- (instancetype)initWithJson:(NSDictionary*)json;
+//
+// Constructor.
+// - json: dictionary containing player record
+// - url: base URL for relative image URLs in the JSON.
+//
+- (instancetype)initWithJson:(NSDictionary*)json url:(NSURL*)url;
 
 @end

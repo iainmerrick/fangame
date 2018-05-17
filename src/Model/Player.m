@@ -2,7 +2,7 @@
 
 @implementation Player
 
-- (instancetype)initWithJson:(NSDictionary*)json
+- (instancetype)initWithJson:(NSDictionary*)json url:(NSURL*)url
 {
 	NSAssert(json, @"json must be non-nil");
 
@@ -16,6 +16,7 @@
 
 		NSDictionary* image = json[@"images"][@"default"];
 		_imageSize = CGSizeMake([image[@"width"] doubleValue], [image[@"height"] doubleValue]);
+		_imageUrl = [[NSURL alloc] initWithString:image[@"url"] relativeToURL:url];
 	}
 	return self;
 }
