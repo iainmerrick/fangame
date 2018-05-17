@@ -1,6 +1,5 @@
 #import <Foundation/Foundation.h>
 
-#import "Loader.h"
 #import "Player.h"
 
 @class Players;
