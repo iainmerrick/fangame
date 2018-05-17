@@ -15,7 +15,7 @@ static NSData* _data;
 + (void)setUp
 {
 	_bundle = [NSBundle bundleForClass:self.class];
-	_url = [_bundle URLForResource:@"Data/Players" withExtension:@"json"];
+	_url = [_bundle URLForResource:@"TestData/Players" withExtension:@"json"];
 	_data = [NSData dataWithContentsOfURL:_url];
 }
 
@@ -56,7 +56,7 @@ static NSData* _data;
 
 	Player* a = players.players[0];
 
-	NSURL* expected = [_bundle URLForResource:@"Data/A" withExtension:@"png"];
+	NSURL* expected = [_bundle URLForResource:@"TestData/A" withExtension:@"png"];
 	XCTAssertEqualObjects(a.imageUrl.absoluteURL, expected.absoluteURL);
 }
 

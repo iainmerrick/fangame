@@ -10,10 +10,21 @@
 		AECF694D20AE2C9F0093E917 /* PlayersTest.m in Sources */ = {isa = PBXBuildFile; fileRef = AECF694620AE2C9F0093E917 /* PlayersTest.m */; };
 		AECF694E20AE2CDE0093E917 /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = AEFF853420AE2AE0002D7EC3 /* Player.m */; };
 		AECF694F20AE2CE10093E917 /* Players.m in Sources */ = {isa = PBXBuildFile; fileRef = AEFF853620AE2AE0002D7EC3 /* Players.m */; };
-		AECF695120AE2D060093E917 /* Data in Resources */ = {isa = PBXBuildFile; fileRef = AECF695020AE2D060093E917 /* Data */; };
-		AECF696020AE2D480093E917 /* Data in Resources */ = {isa = PBXBuildFile; fileRef = AECF695020AE2D060093E917 /* Data */; };
 		AECF696120AE2D530093E917 /* PlayersTest.m in Sources */ = {isa = PBXBuildFile; fileRef = AECF694620AE2C9F0093E917 /* PlayersTest.m */; };
 		AECF697620AE2EAA0093E917 /* FanGameTest.m in Sources */ = {isa = PBXBuildFile; fileRef = AECF697420AE2EA90093E917 /* FanGameTest.m */; };
+		AECF697D20AE33880093E917 /* PlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = AECF697C20AE33880093E917 /* PlayerView.m */; };
+		AECF699220AE36CA0093E917 /* PlayerViewTest.m in Sources */ = {isa = PBXBuildFile; fileRef = AECF698E20AE36CA0093E917 /* PlayerViewTest.m */; };
+		AECF699420AE37600093E917 /* TestData in Resources */ = {isa = PBXBuildFile; fileRef = AECF699320AE37600093E917 /* TestData */; };
+		AECF699520AE37600093E917 /* TestData in Resources */ = {isa = PBXBuildFile; fileRef = AECF699320AE37600093E917 /* TestData */; };
+		AECF699620AE37600093E917 /* TestData in Resources */ = {isa = PBXBuildFile; fileRef = AECF699320AE37600093E917 /* TestData */; };
+		AECF699720AE37600093E917 /* TestData in Resources */ = {isa = PBXBuildFile; fileRef = AECF699320AE37600093E917 /* TestData */; };
+		AECF699820AE3BA00093E917 /* PlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = AECF697C20AE33880093E917 /* PlayerView.m */; };
+		AECF699920AE3BAB0093E917 /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = AEFF853420AE2AE0002D7EC3 /* Player.m */; };
+		AECF699A20AE3BAB0093E917 /* Players.m in Sources */ = {isa = PBXBuildFile; fileRef = AEFF853620AE2AE0002D7EC3 /* Players.m */; };
+		AECF699B20AE3BAD0093E917 /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = AEFF853420AE2AE0002D7EC3 /* Player.m */; };
+		AECF699C20AE3BAD0093E917 /* Players.m in Sources */ = {isa = PBXBuildFile; fileRef = AEFF853620AE2AE0002D7EC3 /* Players.m */; };
+		AECF699D20AE3BB00093E917 /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = AEFF853420AE2AE0002D7EC3 /* Player.m */; };
+		AECF699E20AE3BB00093E917 /* Players.m in Sources */ = {isa = PBXBuildFile; fileRef = AEFF853620AE2AE0002D7EC3 /* Players.m */; };
 		AEFF854420AE2AE0002D7EC3 /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = AEFF853420AE2AE0002D7EC3 /* Player.m */; };
 		AEFF854520AE2AE0002D7EC3 /* Players.m in Sources */ = {isa = PBXBuildFile; fileRef = AEFF853620AE2AE0002D7EC3 /* Players.m */; };
 		AEFF854620AE2AE0002D7EC3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEFF853920AE2AE0002D7EC3 /* ViewController.m */; };
@@ -39,17 +50,29 @@
 			remoteGlobalIDString = AEFF84E820AE27CB002D7EC3;
 			remoteInfo = FanGame;
 		};
+		AECF698720AE36A60093E917 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AEFF84E120AE27CB002D7EC3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AEFF84E820AE27CB002D7EC3;
+			remoteInfo = FanGame;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		AECF693620AE2C630093E917 /* ModelTestMac.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ModelTestMac.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AECF694520AE2C9F0093E917 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AECF694620AE2C9F0093E917 /* PlayersTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayersTest.m; sourceTree = "<group>"; };
-		AECF695020AE2D060093E917 /* Data */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Data; sourceTree = "<group>"; };
 		AECF695620AE2D3B0093E917 /* ModelTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ModelTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AECF696620AE2E310093E917 /* AppTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AECF697420AE2EA90093E917 /* FanGameTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FanGameTest.m; sourceTree = "<group>"; };
 		AECF697520AE2EA90093E917 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AECF697B20AE33880093E917 /* PlayerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlayerView.h; sourceTree = "<group>"; };
+		AECF697C20AE33880093E917 /* PlayerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlayerView.m; sourceTree = "<group>"; };
+		AECF698220AE36A60093E917 /* ViewTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViewTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AECF698D20AE36CA0093E917 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AECF698E20AE36CA0093E917 /* PlayerViewTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerViewTest.m; sourceTree = "<group>"; };
+		AECF699320AE37600093E917 /* TestData */ = {isa = PBXFileReference; lastKnownFileType = folder; name = TestData; path = src/TestData; sourceTree = "<group>"; };
 		AEFF852A20AE2AA5002D7EC3 /* FanGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FanGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEFF853320AE2AE0002D7EC3 /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
 		AEFF853420AE2AE0002D7EC3 /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
@@ -88,6 +111,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AECF697F20AE36A60093E917 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AEFF84E620AE27CB002D7EC3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -101,7 +131,6 @@
 		AECF693E20AE2C9F0093E917 /* ModelTest */ = {
 			isa = PBXGroup;
 			children = (
-				AECF695020AE2D060093E917 /* Data */,
 				AECF694520AE2C9F0093E917 /* Info.plist */,
 				AECF694620AE2C9F0093E917 /* PlayersTest.m */,
 			);
@@ -119,18 +148,42 @@
 			path = src/AppTest;
 			sourceTree = "<group>";
 		};
+		AECF697820AE318E0093E917 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AECF697B20AE33880093E917 /* PlayerView.h */,
+				AECF697C20AE33880093E917 /* PlayerView.m */,
+			);
+			name = View;
+			path = src/View;
+			sourceTree = "<group>";
+		};
+		AECF698C20AE36C90093E917 /* ViewTest */ = {
+			isa = PBXGroup;
+			children = (
+				AECF698D20AE36CA0093E917 /* Info.plist */,
+				AECF698E20AE36CA0093E917 /* PlayerViewTest.m */,
+			);
+			name = ViewTest;
+			path = src/ViewTest;
+			sourceTree = "<group>";
+		};
 		AEFF84E020AE27CB002D7EC3 = {
 			isa = PBXGroup;
 			children = (
 				AEFF853A20AE2AE0002D7EC3 /* App */,
 				AECF697320AE2EA90093E917 /* AppTest */,
 				AEFF853720AE2AE0002D7EC3 /* Controller */,
+				AECF697820AE318E0093E917 /* View */,
+				AECF698C20AE36C90093E917 /* ViewTest */,
 				AEFF853220AE2AE0002D7EC3 /* Model */,
 				AECF693E20AE2C9F0093E917 /* ModelTest */,
+				AECF699320AE37600093E917 /* TestData */,
 				AEFF852A20AE2AA5002D7EC3 /* FanGame.app */,
 				AECF693620AE2C630093E917 /* ModelTestMac.xctest */,
 				AECF695620AE2D3B0093E917 /* ModelTest.xctest */,
 				AECF696620AE2E310093E917 /* AppTest.xctest */,
+				AECF698220AE36A60093E917 /* ViewTest.xctest */,
 			);
 			sourceTree = "<group>";
 		};
@@ -227,6 +280,24 @@
 			productReference = AECF696620AE2E310093E917 /* AppTest.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		AECF698120AE36A60093E917 /* ViewTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AECF698920AE36A60093E917 /* Build configuration list for PBXNativeTarget "ViewTest" */;
+			buildPhases = (
+				AECF697E20AE36A60093E917 /* Sources */,
+				AECF697F20AE36A60093E917 /* Frameworks */,
+				AECF698020AE36A60093E917 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AECF698820AE36A60093E917 /* PBXTargetDependency */,
+			);
+			name = ViewTest;
+			productName = ViewTest;
+			productReference = AECF698220AE36A60093E917 /* ViewTest.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		AEFF84E820AE27CB002D7EC3 /* FanGame */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = AEFF851520AE27D1002D7EC3 /* Build configuration list for PBXNativeTarget "FanGame" */;
@@ -264,6 +335,10 @@
 						CreatedOnToolsVersion = 9.3.1;
 						TestTargetID = AEFF84E820AE27CB002D7EC3;
 					};
+					AECF698120AE36A60093E917 = {
+						CreatedOnToolsVersion = 9.3.1;
+						TestTargetID = AEFF84E820AE27CB002D7EC3;
+					};
 					AEFF84E820AE27CB002D7EC3 = {
 						CreatedOnToolsVersion = 9.3.1;
 					};
@@ -286,6 +361,7 @@
 				AECF693520AE2C630093E917 /* ModelTestMac */,
 				AECF695520AE2D3B0093E917 /* ModelTest */,
 				AECF696520AE2E310093E917 /* AppTest */,
+				AECF698120AE36A60093E917 /* ViewTest */,
 			);
 		};
 /* End PBXProject section */
@@ -295,7 +371,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AECF695120AE2D060093E917 /* Data in Resources */,
+				AECF699420AE37600093E917 /* TestData in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,7 +379,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AECF696020AE2D480093E917 /* Data in Resources */,
+				AECF699520AE37600093E917 /* TestData in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,6 +387,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AECF699620AE37600093E917 /* TestData in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AECF698020AE36A60093E917 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AECF699720AE37600093E917 /* TestData in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +426,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AECF699C20AE3BAD0093E917 /* Players.m in Sources */,
+				AECF699B20AE3BAD0093E917 /* Player.m in Sources */,
 				AECF696120AE2D530093E917 /* PlayersTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -349,7 +436,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AECF699E20AE3BB00093E917 /* Players.m in Sources */,
+				AECF699D20AE3BB00093E917 /* Player.m in Sources */,
 				AECF697620AE2EAA0093E917 /* FanGameTest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AECF697E20AE36A60093E917 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AECF699A20AE3BAB0093E917 /* Players.m in Sources */,
+				AECF699220AE36CA0093E917 /* PlayerViewTest.m in Sources */,
+				AECF699920AE3BAB0093E917 /* Player.m in Sources */,
+				AECF699820AE3BA00093E917 /* PlayerView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,6 +458,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AEFF854C20AE2AE0002D7EC3 /* main.m in Sources */,
+				AECF697D20AE33880093E917 /* PlayerView.m in Sources */,
 				AEFF854620AE2AE0002D7EC3 /* ViewController.m in Sources */,
 				AEFF854520AE2AE0002D7EC3 /* Players.m in Sources */,
 				AEFF854420AE2AE0002D7EC3 /* Player.m in Sources */,
@@ -377,6 +478,11 @@
 			isa = PBXTargetDependency;
 			target = AEFF84E820AE27CB002D7EC3 /* FanGame */;
 			targetProxy = AECF696B20AE2E310093E917 /* PBXContainerItemProxy */;
+		};
+		AECF698820AE36A60093E917 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AEFF84E820AE27CB002D7EC3 /* FanGame */;
+			targetProxy = AECF698720AE36A60093E917 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -502,6 +608,40 @@
 					"@loader_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.moreplease.fangame.AppTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FanGame;
+			};
+			name = Release;
+		};
+		AECF698A20AE36A60093E917 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = src/ViewTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.moreplease.fangame.ViewTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FanGame;
+			};
+			name = Debug;
+		};
+		AECF698B20AE36A60093E917 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = src/ViewTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.moreplease.fangame.ViewTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = FanGame;
@@ -676,6 +816,15 @@
 			buildConfigurations = (
 				AECF696E20AE2E310093E917 /* Debug */,
 				AECF696F20AE2E310093E917 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AECF698920AE36A60093E917 /* Build configuration list for PBXNativeTarget "ViewTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AECF698A20AE36A60093E917 /* Debug */,
+				AECF698B20AE36A60093E917 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
