@@ -19,7 +19,9 @@ static NSData* _json;
 
 - (void)testLoadJson
 {
-	Players* players = [Players loadData:_json];
+	NSError* error;
+	Players* players = [[Players alloc] initWithData:_json loader:nil error:&error];
+	XCTAssertNil(error);
 	XCTAssertNotNil(players);
 
 	// Note: hmm, I'm not too happy with "players.players"!

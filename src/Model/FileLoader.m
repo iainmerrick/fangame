@@ -7,8 +7,7 @@ static dispatch_queue_t _background_queue;
 + (void)initialize
 {
 	if (self == FileLoader.class) {
-		_background_queue =
-			dispatch_queue_create("FileLoader", DISPATCH_QUEUE_CONCURRENT);
+		_background_queue = dispatch_queue_create("FileLoader", DISPATCH_QUEUE_CONCURRENT);
 	}
 }
 
@@ -26,25 +25,18 @@ static dispatch_queue_t _background_queue;
 	NSString* path = [_path stringByAppendingPathComponent:url];
 	dispatch_async(_background_queue, ^{
 		NSError* err;
-		NSData* data = [NSData dataWithContentsOfFile:path
-											  options:NSDataReadingMappedIfSafe
-												error:&err];
+		NSData* data = [NSData dataWithContentsOfFile:path options:0 error:&err];
 		if (err) {
 			dispatch_async(dispatch_get_main_queue(), ^{
 				block(nil, nil, err);
 			});
 		}
 		NSString* dir = path.stringByDeletingLastPathComponent;
-		FileLoader* subloader = [FileLoader loaderWithPath:dir];
+		FileLoader* subloader = [[FileLoader alloc] initWithPath:dir];
 		dispatch_async(dispatch_get_main_queue(), ^{
 			block(data, subloader, nil);
 		});
 	});
-}
-
-+ (instancetype)loaderWithPath:(NSString*)path
-{
-	return [[FileLoader alloc] initWithPath:path];
 }
 
 @end

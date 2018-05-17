@@ -23,10 +23,8 @@ static NSData* _b_png;
 + (void)setUp
 {
 	_bundle = [NSBundle bundleForClass:self.class];
-	_a_png = [NSData dataWithContentsOfFile:[_bundle pathForResource:@"Data/A"
-															  ofType:@"png"]];
-	_b_png = [NSData dataWithContentsOfFile:[_bundle pathForResource:@"Data/B"
-															  ofType:@"png"]];
+	_a_png = [NSData dataWithContentsOfFile:[_bundle pathForResource:@"Data/A" ofType:@"png"]];
+	_b_png = [NSData dataWithContentsOfFile:[_bundle pathForResource:@"Data/B" ofType:@"png"]];
 }
 
 - (void)setUp
@@ -43,45 +41,44 @@ static NSData* _b_png;
 
 - (void)testLoad
 {
-	id<Loader> loader = [FileLoader loaderWithPath:_bundle.resourcePath];
+	id<Loader> loader = [[FileLoader alloc] initWithPath:_bundle.resourcePath];
 
 	XCTestExpectation* expect = [self expectationWithDescription:@"Load A.png"];
 
 	[loader loadUrl:@"Data/A.png"
-		 completion:^(NSData* data, id<Loader> subloader, NSError* err) {
-			 if (err) XCTFail(@"%@", err);
-			 XCTAssertEqualObjects(data, _a_png);
-			 [expect fulfill];
-		 }];
+	     completion:^(NSData* data, id<Loader> subloader, NSError* err) {
+		     if (err) XCTFail(@"%@", err);
+		     XCTAssertEqualObjects(data, _a_png);
+		     [expect fulfill];
+	     }];
 
 	[self waitForExpectationsWithTimeout:0.1
-								 handler:^(NSError* err) {
-									 if (err) XCTFail(@"%@", err);
-								 }];
+	                             handler:^(NSError* err) {
+		                             if (err) XCTFail(@"%@", err);
+	                             }];
 }
 
 - (void)testLoadRelative
 {
-	id<Loader> loader = [FileLoader loaderWithPath:_bundle.resourcePath];
+	id<Loader> loader = [[FileLoader alloc] initWithPath:_bundle.resourcePath];
 
 	XCTestExpectation* expect = [self expectationWithDescription:@"Load A.png"];
 
 	[loader loadUrl:@"Data/A.png"
-		 completion:^(NSData* data, id<Loader> subloader, NSError* err) {
-			 if (err) XCTFail(@"%@", err);
-			 [subloader
-					loadUrl:@"B.png"
-				 completion:^(NSData* data, id<Loader> subloader, NSError* err) {
-					 if (err) XCTFail(@"%@", err);
-					 XCTAssertEqualObjects(data, _b_png);
-					 [expect fulfill];
-				 }];
-		 }];
+	     completion:^(NSData* data, id<Loader> subloader, NSError* err) {
+		     if (err) XCTFail(@"%@", err);
+		     [subloader loadUrl:@"B.png"
+		             completion:^(NSData* data, id<Loader> subloader, NSError* err) {
+			             if (err) XCTFail(@"%@", err);
+			             XCTAssertEqualObjects(data, _b_png);
+			             [expect fulfill];
+		             }];
+	     }];
 
 	[self waitForExpectationsWithTimeout:0.1
-								 handler:^(NSError* err) {
-									 if (err) XCTFail("%@", err);
-								 }];
+	                             handler:^(NSError* err) {
+		                             if (err) XCTFail("%@", err);
+	                             }];
 }
 
 @end

@@ -11,8 +11,7 @@
 // - subloader: a Loader instance that can be used to load relative URLs
 // - error: NULL on success, an NSError on failure
 //
-typedef void (^LoadCompletionBlock)(
-	NSData* data, id<Loader> subloader, NSError* error);
+typedef void (^LoadCompletionBlock)(NSData* data, id<Loader> subloader, NSError* error);
 
 @protocol Loader
 

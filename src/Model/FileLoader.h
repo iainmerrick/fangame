@@ -8,6 +8,6 @@
 
 @property (readonly) NSString* path;
 
-+ (instancetype)loaderWithPath:(NSString*)path;
+- (instancetype)initWithPath:(NSString*)path;
 
 @end

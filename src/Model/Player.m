@@ -2,7 +2,7 @@
 
 @implementation Player
 
-- (instancetype)initWithJsonObject:(NSDictionary*)json
+- (instancetype)initWithJson:(NSDictionary*)json
 {
 	NSAssert(json, @"json must be non-nil");
 
@@ -15,15 +15,9 @@
 		_fppg = [json[@"fppg"] doubleValue];
 
 		NSDictionary* image = json[@"images"][@"default"];
-		_imageSize = CGSizeMake(
-			[image[@"width"] doubleValue], [image[@"height"] doubleValue]);
+		_imageSize = CGSizeMake([image[@"width"] doubleValue], [image[@"height"] doubleValue]);
 	}
 	return self;
-}
-
-+ (instancetype)loadJsonObject:(NSDictionary*)json
-{
-	return [[Player alloc] initWithJsonObject:json];
 }
 
 @end
