@@ -72,7 +72,7 @@
 		AECF698220AE36A60093E917 /* ViewTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViewTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AECF698D20AE36CA0093E917 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AECF698E20AE36CA0093E917 /* PlayerViewTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerViewTest.m; sourceTree = "<group>"; };
-		AECF699320AE37600093E917 /* TestData */ = {isa = PBXFileReference; lastKnownFileType = folder; name = TestData; path = src/TestData; sourceTree = "<group>"; };
+		AECF699320AE37600093E917 /* TestData */ = {isa = PBXFileReference; lastKnownFileType = folder; name = TestData; path = TestData; sourceTree = "<group>"; };
 		AEFF852A20AE2AA5002D7EC3 /* FanGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FanGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEFF853320AE2AE0002D7EC3 /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
 		AEFF853420AE2AE0002D7EC3 /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
@@ -135,7 +135,7 @@
 				AECF694620AE2C9F0093E917 /* PlayersTest.m */,
 			);
 			name = ModelTest;
-			path = src/ModelTest;
+			path = ModelTest;
 			sourceTree = "<group>";
 		};
 		AECF697320AE2EA90093E917 /* AppTest */ = {
@@ -145,7 +145,7 @@
 				AECF697520AE2EA90093E917 /* Info.plist */,
 			);
 			name = AppTest;
-			path = src/AppTest;
+			path = AppTest;
 			sourceTree = "<group>";
 		};
 		AECF697820AE318E0093E917 /* View */ = {
@@ -155,7 +155,7 @@
 				AECF697C20AE33880093E917 /* PlayerView.m */,
 			);
 			name = View;
-			path = src/View;
+			path = View;
 			sourceTree = "<group>";
 		};
 		AECF698C20AE36C90093E917 /* ViewTest */ = {
@@ -165,7 +165,7 @@
 				AECF698E20AE36CA0093E917 /* PlayerViewTest.m */,
 			);
 			name = ViewTest;
-			path = src/ViewTest;
+			path = ViewTest;
 			sourceTree = "<group>";
 		};
 		AEFF84E020AE27CB002D7EC3 = {
@@ -196,7 +196,7 @@
 				AEFF853620AE2AE0002D7EC3 /* Players.m */,
 			);
 			name = Model;
-			path = src/Model;
+			path = Model;
 			sourceTree = "<group>";
 		};
 		AEFF853720AE2AE0002D7EC3 /* Controller */ = {
@@ -206,7 +206,7 @@
 				AEFF853920AE2AE0002D7EC3 /* ViewController.m */,
 			);
 			name = Controller;
-			path = src/Controller;
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		AEFF853A20AE2AE0002D7EC3 /* App */ = {
@@ -221,7 +221,7 @@
 				AEFF854320AE2AE0002D7EC3 /* main.m */,
 			);
 			name = App;
-			path = src/App;
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -512,7 +512,7 @@
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = src/ModelTest/Info.plist;
+				INFOPLIST_FILE = ModelTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -531,7 +531,7 @@
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = src/ModelTest/Info.plist;
+				INFOPLIST_FILE = ModelTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -549,7 +549,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = src/ModelTest/Info.plist;
+				INFOPLIST_FILE = ModelTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -567,7 +567,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = src/ModelTest/Info.plist;
+				INFOPLIST_FILE = ModelTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -584,7 +584,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = src/AppTest/Info.plist;
+				INFOPLIST_FILE = AppTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -601,7 +601,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = src/AppTest/Info.plist;
+				INFOPLIST_FILE = AppTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -618,7 +618,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = src/ViewTest/Info.plist;
+				INFOPLIST_FILE = ViewTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -635,7 +635,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = src/ViewTest/Info.plist;
+				INFOPLIST_FILE = ViewTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -763,7 +763,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "$(SRCROOT)/src/App/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -779,7 +779,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "$(SRCROOT)/src/App/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
