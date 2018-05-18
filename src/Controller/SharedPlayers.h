@@ -6,7 +6,6 @@ typedef void (^LoadPlayersBlock)(Players*);
 
 //
 // Singleton holding the Players object used by the app.
-// By default we'll load a fixed URL, but tests can override this.
 //
 @interface SharedPlayers : NSObject
 
@@ -14,8 +13,14 @@ typedef void (^LoadPlayersBlock)(Players*);
 
 @end
 
-@interface SharedPlayers (TestHelpers)
+// By default we'll load a fixed URL, but tests can override
+// this by setting this environment variable.
+extern const NSString* const SHARED_PLAYERS_URL;
 
-+ (void)setUrl:(NSURL*)url;
+@interface SharedPlayers(TestHelpers)
+
+// Zero out the singleton (if any).
+// Note that any existing references won't be cleared.
++ (void) reset;
 
 @end

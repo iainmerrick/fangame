@@ -1,27 +1,28 @@
 #import "SharedPlayers.h"
 
+NSString* const SHARED_PLAYERS_URL = @"FAN_GAME_SHARED_PLAYERS_URL";
+
 @implementation SharedPlayers
 {
 	Players* _players;
 	NSMutableArray* _blocks;
 }
 
-static NSURL* _url;
 static SharedPlayers* _shared;
-
-+ (void)setUrl:(NSURL*)url
-{
-	NSAssert(url, @"URL must be non-nil");
-	_url = url;
-	_shared = nil;
-}
 
 + (instancetype)shared
 {
+    NSLog(@"Shared address: %p", &_shared);
 	if (!_shared) {
-		_shared = [[SharedPlayers alloc] initWithUrl:_url];
+        NSLog(@"Initializing!");
+        _shared = [[SharedPlayers alloc] init];
 	}
 	return _shared;
+}
+
++ (void)reset
+{
+    _shared = nil;
 }
 
 + (void)load:(LoadPlayersBlock)completion
@@ -31,13 +32,14 @@ static SharedPlayers* _shared;
 	[shared maybeRunBlocks];
 }
 
-- (instancetype)initWithUrl:(NSURL*)url
+- (instancetype)init
 {
-	if (!url) {
-		url = [NSURL URLWithString:@"https://gist.githubusercontent.com/liamjdouglas/"
-		                           @"bb40ee8721f1a9313c22c6ea0851a105/raw/"
-		                           @"6b6fc89d55ebe4d9b05c1469349af33651d7e7f1/Player.json"];
-	}
+    NSString* urlStr = [NSProcessInfo processInfo].environment[SHARED_PLAYERS_URL];
+    if (!urlStr) {
+        urlStr = @"https://gist.githubusercontent.com/liamjdouglas/bb40ee8721f1a9313c22c6ea0851a105/raw/6b6fc89d55ebe4d9b05c1469349af33651d7e7f1/Player.json";
+    }
+
+    NSURL* url = [NSURL URLWithString:urlStr];
 
 	self = [super init];
 	if (self) {

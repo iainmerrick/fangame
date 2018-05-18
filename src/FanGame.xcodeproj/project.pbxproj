@@ -18,20 +18,26 @@
 		AECF699520AE37600093E917 /* TestData in Resources */ = {isa = PBXBuildFile; fileRef = AECF699320AE37600093E917 /* TestData */; };
 		AECF699620AE37600093E917 /* TestData in Resources */ = {isa = PBXBuildFile; fileRef = AECF699320AE37600093E917 /* TestData */; };
 		AECF699720AE37600093E917 /* TestData in Resources */ = {isa = PBXBuildFile; fileRef = AECF699320AE37600093E917 /* TestData */; };
-		AECF699820AE3BA00093E917 /* PlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = AECF697C20AE33880093E917 /* PlayerView.m */; };
 		AECF699920AE3BAB0093E917 /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = AEFF853420AE2AE0002D7EC3 /* Player.m */; };
 		AECF699A20AE3BAB0093E917 /* Players.m in Sources */ = {isa = PBXBuildFile; fileRef = AEFF853620AE2AE0002D7EC3 /* Players.m */; };
 		AECF699B20AE3BAD0093E917 /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = AEFF853420AE2AE0002D7EC3 /* Player.m */; };
 		AECF699C20AE3BAD0093E917 /* Players.m in Sources */ = {isa = PBXBuildFile; fileRef = AEFF853620AE2AE0002D7EC3 /* Players.m */; };
 		AECF699D20AE3BB00093E917 /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = AEFF853420AE2AE0002D7EC3 /* Player.m */; };
 		AECF699E20AE3BB00093E917 /* Players.m in Sources */ = {isa = PBXBuildFile; fileRef = AEFF853620AE2AE0002D7EC3 /* Players.m */; };
+		AECF69A120AEE5E20093E917 /* GameController.m in Sources */ = {isa = PBXBuildFile; fileRef = AECF69A020AEE5E20093E917 /* GameController.m */; };
 		AECF69A620AEF5E00093E917 /* SharedPlayers.m in Sources */ = {isa = PBXBuildFile; fileRef = AECF69A520AEF5E00093E917 /* SharedPlayers.m */; };
-		AECF69A720AEF5E00093E917 /* SharedPlayers.m in Sources */ = {isa = PBXBuildFile; fileRef = AECF69A520AEF5E00093E917 /* SharedPlayers.m */; };
-		AECF69B720AF007D0093E917 /* SharedPlayersTest.m in Sources */ = {isa = PBXBuildFile; fileRef = AECF69B620AF007D0093E917 /* SharedPlayersTest.m */; };
-		AECF69B820AF02CD0093E917 /* TestData in Resources */ = {isa = PBXBuildFile; fileRef = AECF699320AE37600093E917 /* TestData */; };
+		AECF69CB20AF0B820093E917 /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = AEFF853420AE2AE0002D7EC3 /* Player.m */; };
+		AECF69CC20AF0B820093E917 /* Players.m in Sources */ = {isa = PBXBuildFile; fileRef = AEFF853620AE2AE0002D7EC3 /* Players.m */; };
+		AECF69CD20AF0B840093E917 /* TestData in Resources */ = {isa = PBXBuildFile; fileRef = AECF699320AE37600093E917 /* TestData */; };
+		AECF69CE20AF0F2C0093E917 /* SharedPlayersTest.m in Sources */ = {isa = PBXBuildFile; fileRef = AECF69B620AF007D0093E917 /* SharedPlayersTest.m */; };
+		AECF69CF20AF11EB0093E917 /* PlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = AECF697C20AE33880093E917 /* PlayerView.m */; };
+		AECF69D020AF11F50093E917 /* GameController.m in Sources */ = {isa = PBXBuildFile; fileRef = AECF69A020AEE5E20093E917 /* GameController.m */; };
+		AECF69D120AF11F50093E917 /* SharedPlayers.m in Sources */ = {isa = PBXBuildFile; fileRef = AECF69A520AEF5E00093E917 /* SharedPlayers.m */; };
+		AECF69D220AF122C0093E917 /* SharedPlayers.m in Sources */ = {isa = PBXBuildFile; fileRef = AECF69A520AEF5E00093E917 /* SharedPlayers.m */; };
+		AECF69D320AF12310093E917 /* GameController.m in Sources */ = {isa = PBXBuildFile; fileRef = AECF69A020AEE5E20093E917 /* GameController.m */; };
+		AECF69D420AF12360093E917 /* PlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = AECF697C20AE33880093E917 /* PlayerView.m */; };
 		AEFF854420AE2AE0002D7EC3 /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = AEFF853420AE2AE0002D7EC3 /* Player.m */; };
 		AEFF854520AE2AE0002D7EC3 /* Players.m in Sources */ = {isa = PBXBuildFile; fileRef = AEFF853620AE2AE0002D7EC3 /* Players.m */; };
-		AEFF854620AE2AE0002D7EC3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEFF853920AE2AE0002D7EC3 /* ViewController.m */; };
 		AEFF854720AE2AE0002D7EC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEFF853B20AE2AE0002D7EC3 /* Assets.xcassets */; };
 		AEFF854820AE2AE0002D7EC3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEFF853C20AE2AE0002D7EC3 /* LaunchScreen.storyboard */; };
 		AEFF854920AE2AE0002D7EC3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEFF853E20AE2AE0002D7EC3 /* Main.storyboard */; };
@@ -61,7 +67,7 @@
 			remoteGlobalIDString = AEFF84E820AE27CB002D7EC3;
 			remoteInfo = FanGame;
 		};
-		AECF69B120AF005B0093E917 /* PBXContainerItemProxy */ = {
+		AECF69C220AF0B2F0093E917 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = AEFF84E120AE27CB002D7EC3 /* Project object */;
 			proxyType = 1;
@@ -88,16 +94,14 @@
 		AECF69A020AEE5E20093E917 /* GameController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameController.m; sourceTree = "<group>"; };
 		AECF69A420AEF5E00093E917 /* SharedPlayers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SharedPlayers.h; sourceTree = "<group>"; };
 		AECF69A520AEF5E00093E917 /* SharedPlayers.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SharedPlayers.m; sourceTree = "<group>"; };
-		AECF69AC20AF005B0093E917 /* ControllerTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ControllerTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AECF69B020AF005B0093E917 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AECF69B620AF007D0093E917 /* SharedPlayersTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SharedPlayersTest.m; sourceTree = "<group>"; };
+		AECF69BD20AF0B2F0093E917 /* ControllerTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ControllerTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEFF852A20AE2AA5002D7EC3 /* FanGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FanGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEFF853320AE2AE0002D7EC3 /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
 		AEFF853420AE2AE0002D7EC3 /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
 		AEFF853520AE2AE0002D7EC3 /* Players.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Players.h; sourceTree = "<group>"; };
 		AEFF853620AE2AE0002D7EC3 /* Players.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Players.m; sourceTree = "<group>"; };
-		AEFF853820AE2AE0002D7EC3 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		AEFF853920AE2AE0002D7EC3 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		AEFF853B20AE2AE0002D7EC3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AEFF853D20AE2AE0002D7EC3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AEFF853F20AE2AE0002D7EC3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -136,7 +140,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AECF69A920AF005B0093E917 /* Frameworks */ = {
+		AECF69BA20AF0B2F0093E917 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -215,7 +219,7 @@
 				AECF695620AE2D3B0093E917 /* ModelTest.xctest */,
 				AECF696620AE2E310093E917 /* AppTest.xctest */,
 				AECF698220AE36A60093E917 /* ViewTest.xctest */,
-				AECF69AC20AF005B0093E917 /* ControllerTest.xctest */,
+				AECF69BD20AF0B2F0093E917 /* ControllerTest.xctest */,
 			);
 			sourceTree = "<group>";
 		};
@@ -233,6 +237,8 @@
 		AEFF853720AE2AE0002D7EC3 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				AECF699F20AEE5E20093E917 /* GameController.h */,
+				AECF69A020AEE5E20093E917 /* GameController.m */,
 				AECF69A420AEF5E00093E917 /* SharedPlayers.h */,
 				AECF69A520AEF5E00093E917 /* SharedPlayers.m */,
 			);
@@ -327,23 +333,23 @@
 			productReference = AECF698220AE36A60093E917 /* ViewTest.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
-		AECF69AB20AF005B0093E917 /* ControllerTest */ = {
+		AECF69BC20AF0B2F0093E917 /* ControllerTest */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AECF69B320AF005B0093E917 /* Build configuration list for PBXNativeTarget "ControllerTest" */;
+			buildConfigurationList = AECF69C420AF0B2F0093E917 /* Build configuration list for PBXNativeTarget "ControllerTest" */;
 			buildPhases = (
-				AECF69A820AF005B0093E917 /* Sources */,
-				AECF69A920AF005B0093E917 /* Frameworks */,
-				AECF69AA20AF005B0093E917 /* Resources */,
+				AECF69B920AF0B2F0093E917 /* Sources */,
+				AECF69BA20AF0B2F0093E917 /* Frameworks */,
+				AECF69BB20AF0B2F0093E917 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				AECF69B220AF005B0093E917 /* PBXTargetDependency */,
+				AECF69C320AF0B2F0093E917 /* PBXTargetDependency */,
 			);
 			name = ControllerTest;
 			productName = ControllerTest;
-			productReference = AECF69AC20AF005B0093E917 /* ControllerTest.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
+			productReference = AECF69BD20AF0B2F0093E917 /* ControllerTest.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 		AEFF84E820AE27CB002D7EC3 /* FanGame */ = {
 			isa = PBXNativeTarget;
@@ -376,7 +382,6 @@
 					};
 					AECF695520AE2D3B0093E917 = {
 						CreatedOnToolsVersion = 9.3.1;
-						TestTargetID = AEFF84E820AE27CB002D7EC3;
 					};
 					AECF696520AE2E310093E917 = {
 						CreatedOnToolsVersion = 9.3.1;
@@ -386,7 +391,7 @@
 						CreatedOnToolsVersion = 9.3.1;
 						TestTargetID = AEFF84E820AE27CB002D7EC3;
 					};
-					AECF69AB20AF005B0093E917 = {
+					AECF69BC20AF0B2F0093E917 = {
 						CreatedOnToolsVersion = 9.3.1;
 						TestTargetID = AEFF84E820AE27CB002D7EC3;
 					};
@@ -413,7 +418,7 @@
 				AECF695520AE2D3B0093E917 /* ModelTest */,
 				AECF696520AE2E310093E917 /* AppTest */,
 				AECF698120AE36A60093E917 /* ViewTest */,
-				AECF69AB20AF005B0093E917 /* ControllerTest */,
+				AECF69BC20AF0B2F0093E917 /* ControllerTest */,
 			);
 		};
 /* End PBXProject section */
@@ -451,11 +456,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AECF69AA20AF005B0093E917 /* Resources */ = {
+		AECF69BB20AF0B2F0093E917 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AECF69B820AF02CD0093E917 /* TestData in Resources */,
+				AECF69CD20AF0B840093E917 /* TestData in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -497,8 +502,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				AECF699E20AE3BB00093E917 /* Players.m in Sources */,
-				AECF69A720AEF5E00093E917 /* SharedPlayers.m in Sources */,
+				AECF69D420AF12360093E917 /* PlayerView.m in Sources */,
+				AECF69D220AF122C0093E917 /* SharedPlayers.m in Sources */,
 				AECF699D20AE3BB00093E917 /* Player.m in Sources */,
+				AECF69D320AF12310093E917 /* GameController.m in Sources */,
 				AECF697620AE2EAA0093E917 /* FanGameTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -510,15 +517,19 @@
 				AECF699A20AE3BAB0093E917 /* Players.m in Sources */,
 				AECF699220AE36CA0093E917 /* PlayerViewTest.m in Sources */,
 				AECF699920AE3BAB0093E917 /* Player.m in Sources */,
-				AECF699820AE3BA00093E917 /* PlayerView.m in Sources */,
+				AECF69CF20AF11EB0093E917 /* PlayerView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AECF69A820AF005B0093E917 /* Sources */ = {
+		AECF69B920AF0B2F0093E917 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AECF69B720AF007D0093E917 /* SharedPlayersTest.m in Sources */,
+				AECF69CE20AF0F2C0093E917 /* SharedPlayersTest.m in Sources */,
+				AECF69D020AF11F50093E917 /* GameController.m in Sources */,
+				AECF69D120AF11F50093E917 /* SharedPlayers.m in Sources */,
+				AECF69CB20AF0B820093E917 /* Player.m in Sources */,
+				AECF69CC20AF0B820093E917 /* Players.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -529,8 +540,8 @@
 				AEFF854C20AE2AE0002D7EC3 /* main.m in Sources */,
 				AECF69A620AEF5E00093E917 /* SharedPlayers.m in Sources */,
 				AECF697D20AE33880093E917 /* PlayerView.m in Sources */,
-				AEFF854620AE2AE0002D7EC3 /* ViewController.m in Sources */,
 				AEFF854520AE2AE0002D7EC3 /* Players.m in Sources */,
+				AECF69A120AEE5E20093E917 /* GameController.m in Sources */,
 				AEFF854420AE2AE0002D7EC3 /* Player.m in Sources */,
 				AEFF854A20AE2AE0002D7EC3 /* FanGame.m in Sources */,
 			);
@@ -554,10 +565,10 @@
 			target = AEFF84E820AE27CB002D7EC3 /* FanGame */;
 			targetProxy = AECF698720AE36A60093E917 /* PBXContainerItemProxy */;
 		};
-		AECF69B220AF005B0093E917 /* PBXTargetDependency */ = {
+		AECF69C320AF0B2F0093E917 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = AEFF84E820AE27CB002D7EC3 /* FanGame */;
-			targetProxy = AECF69B120AF005B0093E917 /* PBXContainerItemProxy */;
+			targetProxy = AECF69C220AF0B2F0093E917 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -622,7 +633,6 @@
 		AECF695E20AE2D3C0093E917 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ModelTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -633,14 +643,12 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.moreplease.fangame.ModelTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FanGame.app/FanGame";
 			};
 			name = Debug;
 		};
 		AECF695F20AE2D3C0093E917 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ModelTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -651,7 +659,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.moreplease.fangame.ModelTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FanGame.app/FanGame";
 			};
 			name = Release;
 		};
@@ -723,10 +730,9 @@
 			};
 			name = Release;
 		};
-		AECF69B420AF005B0093E917 /* Debug */ = {
+		AECF69C520AF0B2F0093E917 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ControllerTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -737,14 +743,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.moreplease.fangame.ControllerTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FanGame.app/FanGame";
+				TEST_TARGET_NAME = FanGame;
 			};
 			name = Debug;
 		};
-		AECF69B520AF005B0093E917 /* Release */ = {
+		AECF69C620AF0B2F0093E917 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ControllerTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -755,7 +760,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.moreplease.fangame.ControllerTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FanGame.app/FanGame";
+				TEST_TARGET_NAME = FanGame;
 			};
 			name = Release;
 		};
@@ -940,11 +945,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AECF69B320AF005B0093E917 /* Build configuration list for PBXNativeTarget "ControllerTest" */ = {
+		AECF69C420AF0B2F0093E917 /* Build configuration list for PBXNativeTarget "ControllerTest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AECF69B420AF005B0093E917 /* Debug */,
-				AECF69B520AF005B0093E917 /* Release */,
+				AECF69C520AF0B2F0093E917 /* Debug */,
+				AECF69C620AF0B2F0093E917 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
