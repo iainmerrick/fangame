@@ -4,6 +4,8 @@
 {
 	int _imageTaskCookie;
 	NSURLSessionDataTask* _imageTask;
+
+	UITapGestureRecognizer* _gesture;
 }
 
 + (NSString*)imageViewAccessibilityLabel { return @"PlayerView_imageView"; }
@@ -36,7 +38,12 @@
 
 	[self addSubview:_imageView];
 	[self addSubview:_name];
+
+	_gesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tap)];
+	[self addGestureRecognizer:_gesture];
 }
+
+- (void)tap { [self.delegate playerViewTapped:self]; }
 
 - (void)layoutSubviews
 {
@@ -53,9 +60,15 @@
 
 - (void)setPlayer:(Player*)player
 {
-	_player = player;
-	_name.text = [NSString stringWithFormat:@"%@ %@", player.firstName, player.lastName];
 	[self setNeedsLayout];
+
+	_player = player;
+	_name.text = nil;
+	_imageView.image = nil;
+
+	if (!player) return;
+
+	_name.text = [NSString stringWithFormat:@"%@ %@", player.firstName, player.lastName];
 
 	NSURLSession* session = [NSURLSession sharedSession];
 

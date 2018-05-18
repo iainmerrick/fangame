@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Vd4-R4-vD6">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina3_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,28 +15,78 @@
             <objects>
                 <viewController title="GameController" id="Vd4-R4-vD6" customClass="GameController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vxm-2w-QQR">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NXr-W3-TdX" customClass="PlayerView">
-                                <rect key="frame" x="67" y="124" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <connections>
-                                    <outlet property="delegate" destination="Vd4-R4-vD6" id="9uc-FW-psx"/>
-                                </connections>
-                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="8gm-7t-aT2">
+                                <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FPPG Guessing game" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rYJ-c6-itq">
+                                        <rect key="frame" x="77.5" y="0.0" width="165.5" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="V1n-fc-VhG"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ewo-8O-DTu">
+                                        <rect key="frame" x="140.5" y="40" width="39" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="PUE-ce-TOz"/>
+                                        </constraints>
+                                        <state key="normal" title="Begin"/>
+                                        <connections>
+                                            <action selector="buttonTapped" destination="Vd4-R4-vD6" eventType="touchUpInside" id="9Qy-7A-C8P"/>
+                                        </connections>
+                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Yuw-RR-GBa">
+                                        <rect key="frame" x="0.0" y="80" width="320" height="380"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NXr-W3-TdX" customClass="PlayerView">
+                                                <rect key="frame" x="0.0" y="0.0" width="160" height="380"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <gestureRecognizers/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="Vd4-R4-vD6" id="9uc-FW-psx"/>
+                                                </connections>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PTq-pz-Okl" customClass="PlayerView">
+                                                <rect key="frame" x="160" y="0.0" width="160" height="380"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <gestureRecognizers/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="Vd4-R4-vD6" id="Tgs-3z-qXk"/>
+                                                </connections>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Yuw-RR-GBa" firstAttribute="leading" secondItem="8gm-7t-aT2" secondAttribute="leading" id="FcR-em-mpa"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="8gm-7t-aT2" firstAttribute="top" secondItem="nrx-ee-8k8" secondAttribute="top" id="Pvy-dD-ZcS"/>
+                            <constraint firstItem="8gm-7t-aT2" firstAttribute="leading" secondItem="nrx-ee-8k8" secondAttribute="leading" id="cCx-U1-3gA"/>
+                            <constraint firstItem="8gm-7t-aT2" firstAttribute="trailing" secondItem="nrx-ee-8k8" secondAttribute="trailing" id="gWz-U3-JUN"/>
+                            <constraint firstItem="8gm-7t-aT2" firstAttribute="bottom" secondItem="nrx-ee-8k8" secondAttribute="bottom" id="sGm-V3-BlE"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="nrx-ee-8k8"/>
                     </view>
                     <connections>
-                        <outlet property="playerView" destination="NXr-W3-TdX" id="ISb-Vr-fTF"/>
+                        <outlet property="button" destination="ewo-8O-DTu" id="2co-YT-cUk"/>
+                        <outlet property="content" destination="8gm-7t-aT2" id="sbG-aH-bWv"/>
+                        <outlet property="label" destination="rYJ-c6-itq" id="jud-iI-pjU"/>
+                        <outlet property="left" destination="NXr-W3-TdX" id="2Rd-dp-QN8"/>
+                        <outlet property="right" destination="PTq-pz-Okl" id="eNa-ff-jxG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="590-PX-of3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-535.20000000000005" y="-31.03448275862069"/>
+            <point key="canvasLocation" x="-536.25" y="-31.690140845070424"/>
         </scene>
     </scenes>
 </document>

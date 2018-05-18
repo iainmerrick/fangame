@@ -9,6 +9,8 @@
 - (void)playerViewImageLoaded:(PlayerView*)view;
 - (void)playerViewImageFailed:(PlayerView*)view error:(NSError*)error;
 
+- (void)playerViewTapped:(PlayerView*)view;
+
 @end
 
 @interface PlayerView : UIView

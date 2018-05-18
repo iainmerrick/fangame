@@ -40,6 +40,8 @@
 	XCTFail(@"playerViewImageFailed: %@", error);
 }
 
+- (void)playerViewTapped:(PlayerView*)view { XCTFail(@"Unexpected tap on PlayerView"); }
+
 - (void)testSetPlayer
 {
 	Player* a = _players.players[0];
