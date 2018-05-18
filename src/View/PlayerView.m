@@ -38,10 +38,24 @@
 	[self addSubview:_name];
 }
 
+- (void)layoutSubviews
+{
+	CGRect r = self.bounds;
+
+	// Name at the bottom with its preferred height, image at the top.
+	float nameHeight = [_name sizeThatFits:r.size].height;
+	CGRect imageRect = CGRectMake(r.origin.x, r.origin.y, r.size.width, r.size.height - nameHeight);
+	CGRect nameRect = CGRectMake(r.origin.x, CGRectGetMaxY(imageRect), r.size.width, nameHeight);
+
+	_name.frame = nameRect;
+	_imageView.frame = imageRect;
+}
+
 - (void)setPlayer:(Player*)player
 {
 	_player = player;
 	_name.text = [NSString stringWithFormat:@"%@ %@", player.firstName, player.lastName];
+	[self setNeedsLayout];
 
 	NSURLSession* session = [NSURLSession sharedSession];
 
