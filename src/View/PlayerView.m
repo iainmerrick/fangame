@@ -2,7 +2,7 @@
 
 @implementation PlayerView
 {
-	int _imageTaskCount;
+	int _imageTaskCookie;
 	NSURLSessionDataTask* _imageTask;
 }
 
@@ -26,12 +26,14 @@
 
 	NSURLSession* session = [NSURLSession sharedSession];
 
-	int expectedCount = ++_imageTaskCount;
+	// This is used to disambiguate task callbacks.
+	int expectedCookie = ++_imageTaskCookie;
+
 	NSURLSessionDataTask* task =
 	    [session dataTaskWithURL:player.imageUrl
 	           completionHandler:^(NSData* data, NSURLResponse* response, NSError* error) {
 		           dispatch_async(dispatch_get_main_queue(), ^{
-			           if (self->_imageTaskCount != expectedCount) {
+			           if (self->_imageTaskCookie != expectedCookie) {
 				           // This is an old task, not the one we're currently waiting for.
 				           return;
 			           }
