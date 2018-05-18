@@ -10,7 +10,15 @@
 				"width": 256
 			}
 		}
-	}, {
+    }, {
+        "first_name": "bad data - should be skipped",
+        "last_name": "null fppg",
+        "fppg": null,
+    }, {
+        "first_name": "bad data - should be skipped",
+        "last_name": "missing fppg",
+        "fppg": null,
+    }, {
 		"first_name": "B",
 		"last_name": "2",
 		"fppg": 1.5,

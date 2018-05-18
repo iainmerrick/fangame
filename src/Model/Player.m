@@ -8,8 +8,6 @@
 
 	self = [super init];
 	if (self) {
-		// TODO: check that these fields have the correct types.
-		// (Right now we'll probably crash if they're not.)
 		_firstName = json[@"first_name"];
 		_lastName = json[@"last_name"];
 		_fppg = [json[@"fppg"] doubleValue];

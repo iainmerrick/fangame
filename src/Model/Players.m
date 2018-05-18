@@ -16,12 +16,17 @@
 
 	self = [super init];
 	if (self) {
-		NSArray* json_players = json[@"players"];
-		NSMutableArray* players = [NSMutableArray arrayWithCapacity:json_players.count];
-		for (NSDictionary* p in json_players) {
-			Player* player = [[Player alloc] initWithJson:p url:url];
-			[players addObject:player];
-		}
+		NSMutableArray* players = [NSMutableArray array];
+		for (NSDictionary* p in json[@"players"]) {
+            @try {
+                Player* player = [[Player alloc] initWithJson:p url:url];
+                [players addObject:player];
+            } @catch (NSException* e) {
+                // TODO: How should we handle bad player data?
+                // For now, just log it and skip it.
+                NSLog(@"Error parsing Player record: %@", e.reason);
+            }
+        }
 		_players = [NSArray arrayWithArray:players];
 	}
 	return self;
