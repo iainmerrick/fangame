@@ -1,43 +1,35 @@
-//
-//  FanGameUITests.m
-//  FanGameUITests
-//
-//  Created by Iain Merrick on 17/05/2018.
-//  Copyright © 2018 Iain Merrick. All rights reserved.
-//
-
 #import <XCTest/XCTest.h>
 
-@interface FanGameUITests : XCTestCase
+#import "PlayerView.h"
+#import "SharedPlayers.h"
+
+@interface FanGameTest : XCTestCase
 
 @end
 
-@implementation FanGameUITests
+@implementation FanGameTest
+{
+	XCUIApplication* _app;
+}
 
 - (void)setUp
 {
 	[super setUp];
 
-	// Put setup code here. This method is called before the invocation of each test method in the class.
+	NSBundle* bundle = [NSBundle bundleForClass:self.class];
+	NSURL* url = [bundle URLForResource:@"TestData/Players" withExtension:@"json"];
 
-	// In UI tests it is usually best to stop immediately when a failure occurs.
-	self.continueAfterFailure = NO;
-	// UI tests must launch the application that they test. Doing this in setup will make sure it happens for each test method.
-	[[[XCUIApplication alloc] init] launch];
-
-	// In UI tests it’s important to set the initial state - such as interface orientation - required for your tests before they run. The setUp method is a good place to do this.
+	_app = [[XCUIApplication alloc] init];
+	NSMutableDictionary* env = _app.launchEnvironment.mutableCopy;
+	env[SHARED_PLAYERS_URL] = url;
+	_app.launchEnvironment = env;
+	[_app launch];
 }
 
-- (void)tearDown
+- (void)testName
 {
-	// Put teardown code here. This method is called after the invocation of each test method in the class.
-	[super tearDown];
-}
-
-- (void)testExample
-{
-	// Use recording to get started writing UI tests.
-	// Use XCTAssert and related functions to verify your tests produce the correct results.
+	XCUIElement* name = _app.textFields[PlayerView.nameAccessibilityLabel];
+	XCTAssertEqualObjects(name.value, @"A 1");
 }
 
 @end

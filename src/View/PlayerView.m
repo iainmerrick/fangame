@@ -6,23 +6,42 @@
 	NSURLSessionDataTask* _imageTask;
 }
 
++ (NSString*)imageViewAccessibilityLabel { return @"PlayerView_imageView"; }
+
++ (NSString*)nameAccessibilityLabel { return @"PlayerView_name"; }
+
+- (instancetype)initWithCoder:(NSCoder*)aDecoder
+{
+	self = [super initWithCoder:aDecoder];
+	if (self) [self finishInit];
+	return self;
+}
+
 - (instancetype)initWithFrame:(CGRect)frame
 {
 	self = [super initWithFrame:frame];
-	if (self) {
-		_imageView = [[UIImageView alloc] init];
-		_label = [[UILabel alloc] init];
-
-		[self addSubview:_imageView];
-		[self addSubview:_label];
-	}
+	if (self) [self finishInit];
 	return self;
+}
+
+- (void)finishInit
+{
+	_imageView = [[UIImageView alloc] initWithFrame:self.bounds];
+	_imageView.accessibilityLabel = [self.class imageViewAccessibilityLabel];
+	_imageView.contentMode = UIViewContentModeScaleAspectFit;
+
+	_name = [[UILabel alloc] initWithFrame:self.bounds];
+	_name.accessibilityLabel = [self.class imageViewAccessibilityLabel];
+	_name.textAlignment = NSTextAlignmentCenter;
+
+	[self addSubview:_imageView];
+	[self addSubview:_name];
 }
 
 - (void)setPlayer:(Player*)player
 {
 	_player = player;
-	_label.text = [NSString stringWithFormat:@"%@ %@", player.firstName, player.lastName];
+	_name.text = [NSString stringWithFormat:@"%@ %@", player.firstName, player.lastName];
 
 	NSURLSession* session = [NSURLSession sharedSession];
 

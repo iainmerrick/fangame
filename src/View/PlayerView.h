@@ -13,10 +13,13 @@
 
 @interface PlayerView : UIView
 
-@property (nonatomic, weak) id<PlayerViewDelegate> delegate;
+@property (nonatomic, weak) IBOutlet id<PlayerViewDelegate> delegate;
 @property (nonatomic) Player* player;
 
 @property (nonatomic, readonly) UIImageView* imageView;
-@property (nonatomic, readonly) UILabel* label;
+@property (nonatomic, readonly) UILabel* name;
+
+@property (class, readonly) NSString* imageViewAccessibilityLabel;
+@property (class, readonly) NSString* nameAccessibilityLabel;
 
 @end

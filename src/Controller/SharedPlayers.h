@@ -17,10 +17,10 @@ typedef void (^LoadPlayersBlock)(Players*);
 // this by setting this environment variable.
 extern const NSString* const SHARED_PLAYERS_URL;
 
-@interface SharedPlayers(TestHelpers)
+@interface SharedPlayers (TestHelpers)
 
 // Zero out the singleton (if any).
 // Note that any existing references won't be cleared.
-+ (void) reset;
++ (void)reset;
 
 @end

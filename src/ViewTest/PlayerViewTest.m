@@ -46,7 +46,7 @@
 	_view.player = a;
 
 	XCTAssertEqual(_view.player, a);
-	XCTAssertEqualObjects(_view.label.text, @"A 1");
+	XCTAssertEqualObjects(_view.name.text, @"A 1");
 
 	XCTestExpectation* expectation = [self expectationWithDescription:@"playerViewImageLoaded"];
 	expectation.assertForOverFulfill = YES;
